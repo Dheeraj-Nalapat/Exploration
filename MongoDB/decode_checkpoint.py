@@ -7,6 +7,7 @@ import base64
 import json
 import pickle
 
+from config import config_python
 class MongoDBService:
     """
     A service class for managing MongoDB connections and operations.
@@ -19,7 +20,7 @@ class MongoDBService:
     """
 
     def __init__(self):
-        self.uri = "mongodb+srv://dheerajnalapat3:qXUnGezJou9r7PwH@cluster0.bbqmh.mongodb.net/"
+        self.uri = config_python.ATLAS_CLUSTER0_CONNECTION
         self.database_name = "checkpoint"
         self.collection_name = "checkpoints"
 
