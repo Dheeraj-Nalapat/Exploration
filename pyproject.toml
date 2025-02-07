@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "learning"
+version = "0.1.0"
+description = ""
+authors = ["Dheeraj-Nalapat <dheerajnalapat3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.3.17"
+langchain-openai = "^0.3.4"
+langchain-google-vertexai = "^2.0.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
